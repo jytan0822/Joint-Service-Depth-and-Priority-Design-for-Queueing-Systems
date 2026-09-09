@@ -34,11 +34,11 @@ Every notebook writes its figures to paths **relative to the working directory**
 
 These notebooks reproduce the theoretical visualizations and the welfare-gap tables discussed in the paper.
 
-| Figure / Table | Notebook | Description | Runtime |
-| :--- | :--- | :--- | :--- |
-| **Figure 1** | `Proposition_1.ipynb` | Priority-switch threshold $c$ and welfare under each priority rule (Proposition 1). | ~19 min |
-| **Tables 1 & 2** | `Section_6.1.ipynb` | Welfare gap across $\lambda_2/\lambda_1$ and across $(\theta_1,\theta_2)$, for four value functions. | ~40 s |
-| **Figures 2 & 3** | `Section_6.2.ipynb` | Optimal service depth, sojourn time, welfare/surplus and payment for a continuum of types. | ~1 min |
+| Figure / Table | Notebook | Description |
+| :--- | :--- | :--- |
+| **Figure 1** | `Proposition_1.ipynb` | Priority-switch threshold $c$ and welfare under each priority rule (Proposition 1). |
+| **Tables 1 & 2** | `Section_6.1.ipynb` | Welfare gap across $\lambda_2/\lambda_1$ and across $(\theta_1,\theta_2)$, for four value functions. |
+| **Figures 2 & 3** | `Section_6.2.ipynb` | Optimal service depth, sojourn time, welfare/surplus and payment for a continuum of types. |
 
 `Proposition_1.ipynb` spends almost all of its runtime in the threshold-curve cell, which solves both priority regimes at 35 values of $\theta_1^2/(a\theta_2)$; the plotting cell reads the cached `curve` object, so figures can be restyled without recomputing.
 
@@ -48,14 +48,14 @@ These notebooks reproduce the theoretical visualizations and the welfare-gap tab
 
 Evaluations using an AI agent's measured service values and service times, with reasoning effort as the service depth. All notebooks in this section read the saved run log and are fully offline.
 
-| Paper Section | Notebook | Description | Runtime |
-| :--- | :--- | :--- | :--- |
-| **Section 7.1** | `Case Study/SGD_service_depth_experiment.ipynb` | Samples 200 SGD test turns and queries the agent at five reasoning efforts. **Paid API calls; see the caveat below.** | — |
-| **Figure 4, Section 7.2** | `Case Study/SGD_stats.ipynb` | Empirical calibration: service values $V(d_k)$, mean service times $S(d_k)$, and the service-time histograms. | ~5 s |
-| **Figure 5, Section 7.3** | `Case Study/two_type_load.ipynb` | Two-type model: optimal policy, optimal IC menu and welfare as the arrival rate $\lambda$ varies. | ~5 s |
-| **Figure 6, Section 7.3** | `Case Study/two_type_composition.ipynb` | Two-type model: the same objects as the patient-to-impatient ratio $\lambda_2/\lambda_1$ varies. | ~5 s |
-| **Figure 7, Section 7.4** | `Case Study/continuous_type_load.ipynb` | Value of joint design: welfare, service depth and sojourn time under four designs. | ~10 min |
-| **Figure 8, Section 7.4** | `Case Study/continuous_type_personalization.ipynb` | Value of personalization: a two-cluster population treated as two types or as a continuum. | ~5 min |
+| Paper Section | Notebook | Description |
+| :--- | :--- | :--- |
+| **Section 7.1** | `Case Study/SGD_service_depth_experiment.ipynb` | Samples 200 SGD test turns and queries the agent at five reasoning efforts. **Paid API calls; see the caveat below.** |
+| **Figure 4, Section 7.2** | `Case Study/SGD_stats.ipynb` | Empirical calibration: service values $V(d_k)$, mean service times $S(d_k)$, and the service-time histograms. |
+| **Figure 5, Section 7.3** | `Case Study/two_type_load.ipynb` | Two-type model: optimal policy, optimal IC menu and welfare as the arrival rate $\lambda$ varies. |
+| **Figure 6, Section 7.3** | `Case Study/two_type_composition.ipynb` | Two-type model: the same objects as the patient-to-impatient ratio $\lambda_2/\lambda_1$ varies. |
+| **Figure 7, Section 7.4** | `Case Study/continuous_type_load.ipynb` | Value of joint design: welfare, service depth and sojourn time under four designs. |
+| **Figure 8, Section 7.4** | `Case Study/continuous_type_personalization.ipynb` | Value of personalization: a two-cluster population treated as two types or as a continuum. |
 
 Supporting modules in `Case Study/`:
 
