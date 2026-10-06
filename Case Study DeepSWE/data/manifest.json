@@ -1,0 +1,28 @@
+{
+  "benchmark": "DeepSWE v1.1",
+  "upstream_url": "https://deepswe.datacurve.ai/artifacts/v1.1/trials.json",
+  "upstream_last_modified": "Wed, 30 Sep 2026 20:03:42 GMT",
+  "prepared_by": "prepare_data.py (selects the records below and writes them unchanged)",
+  "file": "deepswe_v1.1_gpt56_scored_trials.json",
+  "sha256": "bbd9226f87e3bfb2502a4e86a67b204947dd99732ec2be474cb6ca00daec2999",
+  "record_count": 6766,
+  "models": [
+    "gpt-5-6-luna",
+    "gpt-5-6-sol",
+    "gpt-5-6-terra"
+  ],
+  "scope": "GPT-5.6 Luna, Terra and Sol trials on DeepSWE tasks (source=deep-swe) that the publisher includes in its score (included_in_score=true).",
+  "cost_basis": "Unmodified historical cost_usd values; no current-price adjustment.",
+  "outcome_basis": "Unmodified published passed labels; no regrading or removal of disputed tasks.",
+  "known_grading_review": "https://epoch.ai/benchmarks/deepswe/review",
+  "supplemental_files": [
+    {
+      "file": "deepswe_v1.1_sol_excluded_trials.json",
+      "sha256": "bf06cbe03c0f03e5516c089292ce601c89a15675919344dcc51db9d406d83bd4",
+      "record_count": 4,
+      "scope": "The four GPT-5.6 Sol trials (source=deep-swe) that the publisher excludes from its score because the verifier timed out; fields unchanged."
+    }
+  ],
+  "analysis_outcome_policy": "The four excluded Sol trials count as failures (service value 0) and keep their recorded token usage and cost. All other trials use the published passed labels. This is the paper's analysis convention, not a regrade by the publisher.",
+  "analysis_record_count": 6770
+}

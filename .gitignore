@@ -1,6 +1,7 @@
-# Schema-Guided Dialogue dataset: not redistributed here.
-# See "Case Study Data Setup" in README.md for how to obtain the test split.
-Case Study/data/
+# DeepSWE trial data: not redistributed here. Only the manifest (sources and
+# checksums) is tracked; run "Case Study DeepSWE/prepare_data.py" to download the data.
+Case Study DeepSWE/data/*
+!Case Study DeepSWE/data/manifest.json
 
 # Python
 __pycache__/
